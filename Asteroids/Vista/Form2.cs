@@ -40,13 +40,23 @@ namespace Vista
             button3.Location = new Point(this.juego.M + 100, 160);
 
             Reiniciar.Location = new Point(this.juego.M + 20, 200);
-            Nuevo_Juego.Location = new Point(this.juego.M + 20, 240);
+            Nuevo_Juego.Location = new Point(this.juego.M + 20, 320);
 
 
             pictureBox.Size = new Size(this.juego.M, this.juego.N);
             pictureBox.Location = new Point(0, 0);
             g = pictureBox.CreateGraphics();
 
+            /*Console.WriteLine("Cantidad de Asteroides" + this.juego.AsteroidList.Count());
+            Console.WriteLine("PosicionX Nave = " + this.juego.Nave.PosX);
+            Console.WriteLine("Posiciony Nave = " + this.juego.Nave.PosY);
+            for (int i = 0; i< this.juego.AsteroidList.Count();i++)
+            {
+                Console.WriteLine("PosicionX Asteroide Px = " + this.juego.AsteroidList[i].PosX);
+                Console.WriteLine("PosicionX Asteroide Py = " + this.juego.AsteroidList[i].PosY);
+            }
+            */
+            
         }
         
         private void drawSpace()
@@ -97,12 +107,10 @@ namespace Vista
             if (this.Status == 0)
             {
                 this.Status = 1;
-                this.timer1.Start();
             }
             else
             {
                 this.Status = 0;
-                this.timer1.Stop();
             }
         }
 

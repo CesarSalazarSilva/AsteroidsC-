@@ -5,19 +5,19 @@ using System.Text;
 namespace Modelo
 {
     public class SpaceObject
-    {
+{
 	//Atributos de Movimiento.
 	protected internal double posX;
 	protected internal double posY;
 	protected internal double velocidad;
 	protected internal double angulo;
 	protected internal double recorrido;
-    protected internal double seed;
 	//Atributos Caracteristicos.
 	protected internal double hitbox;
-    
-    //Constructor SpaceObject.
-    public SpaceObject(double posX, double posY, double velocidad, double angulo, double recorrido, double hitbox, double seed)
+	//Atributos Generales.
+	protected internal double seed;
+
+	public SpaceObject(double posX, double posY, double velocidad, double angulo, double recorrido, double hitbox, double seed)
 	{
 		this.posX = posX;
 		this.posY = posY;
@@ -28,47 +28,36 @@ namespace Modelo
 		this.seed = seed;
 	}
 
-	// Metodo que mueve un elemento espacial a un t+1. 
-	public virtual void MoveElement(double angulo, double velocidad, double m, double n)
-	{
-		if (velocidad > 0)
-		{
-			this.velocidad += velocidad;
-			this.angulo += angulo;
-			double angulogradian = ToRadians(this.angulo);
-			this.posX = (this.posX + this.velocidad * Math.Cos(angulogradian)) % m;
-			this.posY = (this.posY + this.velocidad * Math.Sin(angulogradian)) % n;
-			this.recorrido -= this.velocidad*0.01;
-                if (this.posX <0)
-                {
-                    this.posX = m;
-                }
-                if(this.posY < 0)
-                {
-                    this.posY = m; 
-                }
+	/* Metodo que mueve un elemento espacial a un t+1. */
+	public virtual void MoveElement(double angulo, double velocidad, double m, double n){
+		if (velocidad > 0){
+            this.velocidad += velocidad;
+            this.angulo += angulo;
+            double angulogradian = ToRadians(this.angulo);
+            this.posX = (this.posX + this.velocidad * Math.Cos(angulogradian)) % m;
+            this.posY = (this.posY + this.velocidad * Math.Sin(angulogradian)) % n;
+            this.recorrido -= this.velocidad*0.01;
+            if (this.posX <0){
+                this.posX = m;
             }
-		else
-		{
-			this.angulo += angulo;
-			double angulogradian = ToRadians(this.angulo);            
-			this.posX = (this.posX + this.velocidad * Math.Cos(angulogradian)) % m;
-			this.posY = (this.posY + this.velocidad * Math.Sin(angulogradian)) % n;
-			this.recorrido -= this.velocidad*0.01;
-                if (this.posX < 0)
-                {
-                    this.posX = m;
-                    
-                }
-                if (this.posY < 0)
-                {
-                    this.posY = m;
-                    
-                }
-
+            if(this.posY < 0){
+               this.posY = m; 
             }
+        }else{
+            this.angulo += angulo;
+            double angulogradian = ToRadians(this.angulo);            
+            this.posX = (this.posX + this.velocidad * Math.Cos(angulogradian)) % m;
+            this.posY = (this.posY + this.velocidad * Math.Sin(angulogradian)) % n;
+            this.recorrido -= this.velocidad*0.01;
+            if (this.posX < 0){
+                this.posX = m;
+            }
+            if (this.posY < 0){
+                this.posY = m;   
+            }
+        }
 	}
-    //Metodo que convierte un angulo de Grados a Radianes
+
     private double ToRadians(double angulo)
     {
         return (Math.PI / 180) * angulo;
@@ -87,6 +76,7 @@ namespace Modelo
 		}
 	}
 
+
 	public virtual double PosY
 	{
 		get
@@ -98,6 +88,7 @@ namespace Modelo
 			this.posY = value;
 		}
 	}
+
 
 	public virtual double Velocidad
 	{
@@ -111,6 +102,7 @@ namespace Modelo
 		}
 	}
 
+
 	public virtual double Angulo
 	{
 		get
@@ -122,6 +114,7 @@ namespace Modelo
 			this.angulo = value;
 		}
 	}
+
 
 	public virtual double Recorrido
 	{
@@ -135,6 +128,7 @@ namespace Modelo
 		}
 	}
 
+
 	public virtual double Hitbox
 	{
 		get
@@ -146,6 +140,7 @@ namespace Modelo
 			this.hitbox = value;
 		}
 	}
+
 
 	public virtual double Seed
 	{
@@ -159,5 +154,5 @@ namespace Modelo
 		}
 	}
 
-    }
+}
 }

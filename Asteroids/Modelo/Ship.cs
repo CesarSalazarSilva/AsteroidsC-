@@ -6,7 +6,6 @@ namespace Modelo
 {
     public class Ship : SpaceObject
     {
-        //Atributos 
         private double vida;
 
         //Constructor Ship

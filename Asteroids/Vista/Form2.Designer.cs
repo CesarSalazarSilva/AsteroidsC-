@@ -166,7 +166,7 @@
             // 
             this.Reiniciar.Location = new System.Drawing.Point(677, 177);
             this.Reiniciar.Name = "Reiniciar";
-            this.Reiniciar.Size = new System.Drawing.Size(111, 30);
+            this.Reiniciar.Size = new System.Drawing.Size(111, 102);
             this.Reiniciar.TabIndex = 12;
             this.Reiniciar.Text = "Reiniciar";
             this.Reiniciar.UseVisualStyleBackColor = true;
@@ -174,9 +174,9 @@
             // 
             // Nuevo_Juego
             // 
-            this.Nuevo_Juego.Location = new System.Drawing.Point(677, 213);
+            this.Nuevo_Juego.Location = new System.Drawing.Point(677, 285);
             this.Nuevo_Juego.Name = "Nuevo_Juego";
-            this.Nuevo_Juego.Size = new System.Drawing.Size(111, 27);
+            this.Nuevo_Juego.Size = new System.Drawing.Size(111, 102);
             this.Nuevo_Juego.TabIndex = 13;
             this.Nuevo_Juego.Text = "Juego Nuevo ";
             this.Nuevo_Juego.UseVisualStyleBackColor = true;

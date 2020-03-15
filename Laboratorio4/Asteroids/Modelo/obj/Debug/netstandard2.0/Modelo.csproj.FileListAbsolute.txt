@@ -1,9 +1,0 @@
-C:\Users\Cesar\Desktop\Laboratorio4\Asteroids\Modelo\bin\Debug\netstandard2.0\Modelo.deps.json
-C:\Users\Cesar\Desktop\Laboratorio4\Asteroids\Modelo\bin\Debug\netstandard2.0\Modelo.dll
-C:\Users\Cesar\Desktop\Laboratorio4\Asteroids\Modelo\bin\Debug\netstandard2.0\Modelo.pdb
-C:\Users\Cesar\Desktop\Laboratorio4\Asteroids\Modelo\obj\Debug\netstandard2.0\Modelo.csproj.CoreCompileInputs.cache
-C:\Users\Cesar\Desktop\Laboratorio4\Asteroids\Modelo\obj\Debug\netstandard2.0\Modelo.AssemblyInfoInputs.cache
-C:\Users\Cesar\Desktop\Laboratorio4\Asteroids\Modelo\obj\Debug\netstandard2.0\Modelo.AssemblyInfo.cs
-C:\Users\Cesar\Desktop\Laboratorio4\Asteroids\Modelo\obj\Debug\netstandard2.0\Modelo.dll
-C:\Users\Cesar\Desktop\Laboratorio4\Asteroids\Modelo\obj\Debug\netstandard2.0\Modelo.pdb
-C:\Users\Cesar\Desktop\Laboratorio4\Asteroids\Modelo\obj\Debug\netstandard2.0\Modelo.csprojAssemblyReference.cache

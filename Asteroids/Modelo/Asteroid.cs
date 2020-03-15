@@ -6,7 +6,6 @@ namespace Modelo
 {
     public class Asteroid : SpaceObject
     {
-        //Atributos
         private double numeroParticiones;
 
         //Constructor Asteroide.

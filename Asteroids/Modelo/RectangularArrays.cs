@@ -23,6 +23,7 @@ namespace Modelo
             }
             else
                 Array = null;
+
             return Array;
         }
     }

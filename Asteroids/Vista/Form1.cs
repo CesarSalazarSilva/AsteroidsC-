@@ -98,14 +98,7 @@ namespace Vista
                 this.Hide();
 
                 var form2 = new Form2(space);
-                if (anchoN<18 || largoM <30)
-                {
-                    form2.Size = new Size(18 * 10 + 200, 30 * 10 + 50);
-                }
-                else {
-                    form2.Size = new Size(anchoN * 10 + 200, largoM * 10 + 50);
-                }
-                
+                form2.Size = new Size(anchoN * 10 + 200, largoM * 10 + 50);
                 form2.Show();
 
                
